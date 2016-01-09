@@ -1,3 +1,6 @@
+require 'coveralls'
+Coveralls.wear_merged!
+
 ENV['RACK_ENV'] = 'test'
 
 require File.join(File.dirname(__FILE__), '..', '..', 'lib/wtfismyblockchainstrategy.rb')
@@ -15,7 +18,7 @@ class WtfismyblockchainstrategyWorld
   include RSpec::Matchers
 
   def app
-    Wtfismyblockchainstrategy
+    Wtfismyblockchainstrategy::App
   end
 end
 

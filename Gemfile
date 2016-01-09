@@ -6,6 +6,8 @@ gem 'sinatra'
 gem 'thin'
 gem 'rake'
 gem 'rack-conneg'
+gem 'redis'
+gem 'httparty'
 
 group :test do
   gem 'cucumber'
@@ -14,6 +16,8 @@ group :test do
   gem 'guard'
   gem 'guard-cucumber'
   gem 'pry'
+  gem 'rspec'
+  gem 'coveralls'
   gem 'vcr'
   gem 'cucumber-api-steps', require: false
 end
