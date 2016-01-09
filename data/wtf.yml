@@ -9,8 +9,8 @@ responses:
   - I will blockchain you into a bin in a minute
 
 templates:
-  - to put @things into a blockchain in order to disrupt @disruptable
-  - to @gather a @group of @things in order to @verb the blockchain ecosystem
+  - to put @things into a blockchain in order to disrupt @disruptable and annoy @annoyable
+  - to @gather a @group of @adjective @things in order to @verb the blockchain ecosystem
 
 things:
   - cats
@@ -29,11 +29,23 @@ disruptable:
   - Github
   - Bitcoin
 
+annoyable:
+  - Jason Calicanis
+  - libertarians
+  - gamers
+  - idiots
+
 gather:
   - convene
   - gather
   - round up
   - muster
+
+adjective:
+  - World class
+  - reprehensible
+  - desperate
+  - disreputable
 
 group:
   - posse
