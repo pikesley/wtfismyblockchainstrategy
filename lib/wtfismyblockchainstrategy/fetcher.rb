@@ -20,7 +20,7 @@ module Wtfismyblockchainstrategy
       }
     end
 
-    def self.get url, ttl = 3600
+    def self.get url, ttl = 600
       begin
         Marshal.load(self.redis.get url)
       rescue TypeError

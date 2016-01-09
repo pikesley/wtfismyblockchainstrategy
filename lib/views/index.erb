@@ -1,1 +1,8 @@
-<%= @content %>
+<h1 id='title'></h1>
+<script>
+$.getJSON(document.URL + '/data', function(json) {
+  console.log(json)
+  var titles = json['headings']
+  $('#title').text(titles[Math.floor(Math.random() * titles.length)])
+})
+</script>

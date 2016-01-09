@@ -10,11 +10,16 @@ require_relative 'wtfismyblockchainstrategy/version'
 
 module Wtfismyblockchainstrategy
   class App < Sinatra::Base
+    set :root, File.dirname(__FILE__)
+    set :public_folder, Proc.new { File.join(root, 'public') }
+    set :views, 'lib/views'
+
     use Rack::GoogleAnalytics, :tracker => 'UA-46327971-3'
 
     use Rack::Conneg do |conneg|
       conneg.set :accept_all_extensions, false
       conneg.set :fallback, :html
+      conneg.ignore('/css/')
       conneg.provide [
         :html,
         :json
