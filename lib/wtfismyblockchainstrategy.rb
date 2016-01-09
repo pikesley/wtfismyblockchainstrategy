@@ -1,15 +1,8 @@
 require 'sinatra/base'
 require 'rack/conneg'
-require 'redis'
-require 'httparty'
-require 'dotenv'
+require 'yaml'
 require 'tilt/erubis'
 require 'rack-google-analytics'
-
-require_relative 'wtfismyblockchainstrategy/fetcher'
-require_relative 'wtfismyblockchainstrategy/version'
-
-Dotenv.load
 
 module Wtfismyblockchainstrategy
   class App < Sinatra::Base
@@ -42,10 +35,11 @@ module Wtfismyblockchainstrategy
     end
 
     get '/data' do
+      headers 'Vary' => 'Accept'
+
       respond_to do |wants|
-        headers 'Vary' => 'Accept'
         wants.json do
-          Fetcher.fetch_CSVs(Fetcher.list_CSVs).to_json
+          YAML.load_file('data/data.yml').to_json
         end
       end
     end

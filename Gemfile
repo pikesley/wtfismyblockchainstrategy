@@ -7,11 +7,8 @@ gem 'thin'
 gem 'rake'
 gem 'rack-conneg'
 gem 'rack-google-analytics'
-gem 'redis'
-gem 'httparty'
 gem 'puma'
 gem 'erubis'
-gem 'dotenv'
 
 group :test do
   gem 'cucumber'
@@ -22,7 +19,6 @@ group :test do
   gem 'pry'
   gem 'rspec'
   gem 'coveralls'
-  gem 'vcr'
   gem 'cucumber-api-steps', require: false
   gem 'actionpack', '~> 4'
 end
