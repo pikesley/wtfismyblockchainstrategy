@@ -8,4 +8,3 @@ Feature: Get JSON
     When I send a GET request to "data"
     Then the response status should be "200"
     And the JSON response should have "$.things[0]" with the text "cats"
-  #  And the JSON response should have "$[1]type" with the text "graph"

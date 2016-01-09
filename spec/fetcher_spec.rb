@@ -11,7 +11,7 @@ module Wtfismyblockchainstrategy
           'velociraptors',
           'minifigs',
           'Github',
-          'Owls '
+          'owls '
         ]
       )
     end
