@@ -1,0 +1,48 @@
+headings:
+  - Check this shit out, my blockchain strategy is
+  - Stop what you're doing and look at this, my blockchain strategy is
+  - My blockchain strategy, have you grokked it?
+
+responses:
+  - Is that the best you can do?
+  - Say 'Blockchain' one more time!
+  - I will blockchain you into a bin in a minute
+
+templates:
+  - to put @things into a blockchain in order to disrupt @disruptable
+  - to @gather a @group of @things in order to @verb the blockchain ecosystem
+
+things:
+  - cats
+  - dogs
+  - rabbits
+  - meerkats
+  - horses
+  - velociraptors
+  - minifigs
+  - owls
+
+disruptable:
+  - the movie industry
+  - the banking sector
+  - Uber
+  - Github
+
+gather:
+  - convene
+  - gather
+  - round up
+  - muster
+
+group:
+  - posse
+  - bundle
+  - pack
+  - group
+  - set
+
+verb:
+  - disrupt
+  - monetise
+  - agitate
+  - rattle
