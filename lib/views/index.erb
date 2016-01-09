@@ -3,7 +3,7 @@
 <a class='btn btn-success' id='generate' href='/' title='Hit me again!'></a>
 
 <script>
-$.getJSON(document.URL + '/data', function(json) {
+$.getJSON(document.URL, function(json) {
   $('#title').text(getRandom(json['headings']))
 
   $('#strategy').text(fillTemplate(json))

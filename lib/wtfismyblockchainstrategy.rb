@@ -32,18 +32,17 @@ module Wtfismyblockchainstrategy
       end
     end
 
-
     get '/' do
-      @title = 'WTFISMYBLOCKCHAINSTRATEGY'
-      erb :index, layout: :default
-    end
-
-    get '/data' do
       headers 'Vary' => 'Accept'
 
       respond_to do |wants|
         wants.json do
           WTF.to_json
+        end
+
+        wants.html do
+          @title = 'WTFISMYBLOCKCHAINSTRATEGY'
+          erb :index, layout: :default
         end
       end
     end
