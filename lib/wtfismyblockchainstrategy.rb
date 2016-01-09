@@ -44,28 +44,8 @@ module Wtfismyblockchainstrategy
     get '/data' do
       respond_to do |wants|
         headers 'Vary' => 'Accept'
-
         wants.json do
-          {
-            things: [
-              'cats',
-              'dogs',
-              'rabbits',
-              'meerkats',
-              'horses',
-              'velociraptors',
-              'minifigs',
-              'Github',
-              'Owls'
-            ]
-          }.to_json
-
-          Fetcher.fetch_CSVs([
-            'disruptables',
-            'headings',
-            'responses',
-            'things'
-          ]).to_json
+          Fetcher.fetch_CSVs(Fetcher.list_CSVs).to_json
         end
       end
     end

@@ -6,8 +6,4 @@
 
 # WTFISMYBLOCKCHAINSTRATEGY
 
-Data is [here](data/), for now it does
-
-> TO PUT _THING_ INTO A BLOCKCHAIN IN ORDER TO DISRUPT _DISRUPTABLE_
-
-I will work out some more jQuery magic later
+Data is [here](data/), please PR me some more ideas
