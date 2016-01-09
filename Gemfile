@@ -10,6 +10,7 @@ gem 'rack-google-analytics'
 gem 'redis'
 gem 'httparty'
 gem 'puma'
+gem 'erubis'
 
 group :test do
   gem 'cucumber'

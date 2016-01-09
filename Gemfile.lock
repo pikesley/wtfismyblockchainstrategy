@@ -189,6 +189,7 @@ DEPENDENCIES
   coveralls
   cucumber
   cucumber-api-steps
+  erubis
   guard
   guard-cucumber
   httparty
