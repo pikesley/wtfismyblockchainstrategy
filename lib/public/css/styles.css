@@ -1,12 +1,13 @@
-html {
+#title {
+  font-size: 2.2em;
 }
 
 #strategy {
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 #title, #strategy, #generate {
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 #generate {
