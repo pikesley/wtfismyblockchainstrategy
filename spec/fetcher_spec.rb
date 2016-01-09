@@ -10,16 +10,15 @@ module Wtfismyblockchainstrategy
           'horses',
           'velociraptors',
           'minifigs',
-          'Github',
           'owls '
         ]
       )
     end
 
     it 'fetches all the CSVs', :vcr do
-      expect(described_class.fetch_CSVs(['headings', 'disruptables', 'responses', 'things'])).to include (
+      expect(described_class.fetch_CSVs(['headings', 'disruptable', 'responses', 'things'])).to include (
         {
-          'disruptables' => [
+          'disruptable' => [
             'the movie industry',
             'the banking sector',
             'Uber'
@@ -31,7 +30,7 @@ module Wtfismyblockchainstrategy
     it 'knows what CSVs there are', :vcr do
       expect(described_class.list_CSVs).to eq (
         [
-          'disruptables',
+          'disruptable',
           'gather',
           'group',
           'headings',
