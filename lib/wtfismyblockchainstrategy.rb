@@ -2,11 +2,14 @@ require 'sinatra/base'
 require 'rack/conneg'
 require 'redis'
 require 'httparty'
+require 'dotenv'
 require 'tilt/erubis'
 require 'rack-google-analytics'
 
 require_relative 'wtfismyblockchainstrategy/fetcher'
 require_relative 'wtfismyblockchainstrategy/version'
+
+Dotenv.load
 
 module Wtfismyblockchainstrategy
   class App < Sinatra::Base

@@ -11,6 +11,7 @@ gem 'redis'
 gem 'httparty'
 gem 'puma'
 gem 'erubis'
+gem 'dotenv'
 
 group :test do
   gem 'cucumber'
