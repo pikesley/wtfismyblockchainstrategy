@@ -20,4 +20,5 @@ group :test do
   gem 'coveralls'
   gem 'vcr'
   gem 'cucumber-api-steps', require: false
+  gem 'actionpack', '~> 4'
 end

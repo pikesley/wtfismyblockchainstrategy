@@ -34,7 +34,19 @@ module Wtfismyblockchainstrategy
         headers 'Vary' => 'Accept'
 
         wants.json do
-          200
+          {
+            things: [
+              'cats',
+              'dogs',
+              'rabbits',
+              'meerkats',
+              'horses',
+              'velociraptors',
+              'minifigs',
+              'Github',
+              'Owls'
+            ]
+          }.to_json
         end
       end
     end
