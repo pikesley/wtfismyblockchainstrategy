@@ -11,7 +11,7 @@ html {
 
 #generate {
   position: absolute;
-  right: 0;
+  right: 10;
 }
 
 #title, #strategy, #generate {
