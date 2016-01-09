@@ -5,8 +5,8 @@ html {
   font-size: 2em;
 }
 
-#title, #strategy {
-  margin-bottom: 50px;
+#title, #strategy, #generate {
+  margin-top: 70px;
 }
 
 #generate {
