@@ -3,3 +3,11 @@
 [![Coverage Status](http://img.shields.io/coveralls/pikesley/wtfismyblockchainstrategy.svg?style=flat-square)](https://coveralls.io/r/pikesley/wtfismyblockchainstrategy)
 [![Code Climate](http://img.shields.io/codeclimate/github/pikesley/wtfismyblockchainstrategy.svg?style=flat-square)](https://codeclimate.com/github/pikesley/wtfismyblockchainstrategy)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://pikesley.mit-license.org)
+
+# WTFISMYBLOCKCHAINSTRATEGY
+
+Data is [here](data/), for now it does
+
+> TO PUT _THING_ INTO A BLOCKCHAIN IN ORDER TO DISRUPT _DISRUPTABLE_
+
+I will work out some more jQuery magic later
