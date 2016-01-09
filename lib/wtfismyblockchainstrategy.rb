@@ -3,12 +3,15 @@ require 'rack/conneg'
 require 'redis'
 require 'httparty'
 require 'tilt/erubis'
+require 'rack-google-analytics'
 
 require_relative 'wtfismyblockchainstrategy/fetcher'
 require_relative 'wtfismyblockchainstrategy/version'
 
 module Wtfismyblockchainstrategy
   class App < Sinatra::Base
+    use Rack::GoogleAnalytics, :tracker => 'UA-46327971-3'
+
     use Rack::Conneg do |conneg|
       conneg.set :accept_all_extensions, false
       conneg.set :fallback, :html
