@@ -6,6 +6,9 @@ require 'rack-google-analytics'
 
 module Wtfismyblockchainstrategy
   class App < Sinatra::Base
+
+    WTF = YAML.load_file('data/wtf.yml')
+
     set :root, File.dirname(__FILE__)
     set :public_folder, Proc.new { File.join(root, 'public') }
     set :views, 'lib/views'
@@ -41,7 +44,7 @@ module Wtfismyblockchainstrategy
 
       respond_to do |wants|
         wants.json do
-          YAML.load_file('data/data.yml').to_json
+          WTF.to_json
         end
       end
     end
