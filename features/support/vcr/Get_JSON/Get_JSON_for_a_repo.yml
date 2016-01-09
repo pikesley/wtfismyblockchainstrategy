@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/disruptables.csv?client_id=&client_secret=
+    uri: https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/disruptables.csv?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
     body:
       encoding: US-ASCII
       string: ''
@@ -33,13 +33,13 @@ http_interactions:
       Cache-Control:
       - max-age=300
       X-Github-Request-Id:
-      - B91F1320:23FE:27D1AF0:569140AC
+      - B91F131E:23F5:7741C7:56914EE7
       Content-Length:
       - '43'
       Accept-Ranges:
       - bytes
       Date:
-      - Sat, 09 Jan 2016 17:17:32 GMT
+      - Sat, 09 Jan 2016 18:20:54 GMT
       Via:
       - 1.1 varnish
       Connection:
@@ -47,19 +47,19 @@ http_interactions:
       X-Served-By:
       - cache-lhr6321-LHR
       X-Cache:
-      - MISS
+      - HIT
       X-Cache-Hits:
-      - '0'
+      - '1'
       Vary:
       - Authorization,Accept-Encoding
       Access-Control-Allow-Origin:
       - "*"
       X-Fastly-Request-Id:
-      - 56dd6c2372cf8b6a80fc5d5b760fac313654f8b3
+      - 28e22d12dadfe708c509be98723fa66cece9c27b
       Expires:
-      - Sat, 09 Jan 2016 17:22:32 GMT
+      - Sat, 09 Jan 2016 18:25:54 GMT
       Source-Age:
-      - '0'
+      - '159'
     body:
       encoding: UTF-8
       string: |
@@ -67,10 +67,10 @@ http_interactions:
         the banking sector
         Uber
     http_version: 
-  recorded_at: Sat, 09 Jan 2016 17:17:32 GMT
+  recorded_at: Sat, 09 Jan 2016 18:20:54 GMT
 - request:
     method: get
-    uri: https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/headings.csv?client_id=&client_secret=
+    uri: https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/headings.csv?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
     body:
       encoding: US-ASCII
       string: ''
@@ -95,50 +95,50 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000
       Etag:
-      - '"a074ed51629e6f20adda9a4534761b44bdc617ab"'
+      - '"2251cb86c6f2cde03dd27a6440302744c89e2e0d"'
       Content-Type:
       - text/plain; charset=utf-8
       Cache-Control:
       - max-age=300
       X-Github-Request-Id:
-      - B91F131D:23FD:3650738:569140AC
+      - B91F1323:23FD:3832141:56914EE7
       Content-Length:
-      - '159'
+      - '165'
       Accept-Ranges:
       - bytes
       Date:
-      - Sat, 09 Jan 2016 17:17:32 GMT
+      - Sat, 09 Jan 2016 18:20:54 GMT
       Via:
       - 1.1 varnish
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-lhr6328-LHR
+      - cache-lhr6324-LHR
       X-Cache:
-      - MISS
+      - HIT
       X-Cache-Hits:
-      - '0'
+      - '1'
       Vary:
       - Authorization,Accept-Encoding
       Access-Control-Allow-Origin:
       - "*"
       X-Fastly-Request-Id:
-      - 02607b7ba561bd54b3f7bd7a363bd2790e2a5b74
+      - 2b9ef18ff9efdd280c0bbfdf530d297c49ffc433
       Expires:
-      - Sat, 09 Jan 2016 17:22:32 GMT
+      - Sat, 09 Jan 2016 18:25:54 GMT
       Source-Age:
-      - '0'
+      - '159'
     body:
       encoding: UTF-8
       string: |
-        Check this shit out, my blockchain strategy is
-        Stop what you're doing and look at this, my blockchain strategy is
-        My blockchain strategy, have you grokked it?
+        "Check this shit out, my blockchain strategy is"
+        "Stop what you're doing and look at this, my blockchain strategy is"
+        "My blockchain strategy, have you grokked it?"
     http_version: 
-  recorded_at: Sat, 09 Jan 2016 17:17:32 GMT
+  recorded_at: Sat, 09 Jan 2016 18:20:54 GMT
 - request:
     method: get
-    uri: https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/responses.csv?client_id=&client_secret=
+    uri: https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/responses.csv?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
     body:
       encoding: US-ASCII
       string: ''
@@ -169,33 +169,33 @@ http_interactions:
       Cache-Control:
       - max-age=300
       X-Github-Request-Id:
-      - B91F1317:23FD:365068C:569140AC
+      - B91F131B:23F6:B5E1C8:56914EE7
       Content-Length:
       - '106'
       Accept-Ranges:
       - bytes
       Date:
-      - Sat, 09 Jan 2016 17:17:32 GMT
+      - Sat, 09 Jan 2016 18:20:54 GMT
       Via:
       - 1.1 varnish
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-lhr6335-LHR
+      - cache-lhr6324-LHR
       X-Cache:
-      - MISS
+      - HIT
       X-Cache-Hits:
-      - '0'
+      - '1'
       Vary:
       - Authorization,Accept-Encoding
       Access-Control-Allow-Origin:
       - "*"
       X-Fastly-Request-Id:
-      - 44570f49416bd819788b1cec652e7e7996afc624
+      - a4e25d6cdce59aee959106457a01daeb3b8ad9c5
       Expires:
-      - Sat, 09 Jan 2016 17:22:32 GMT
+      - Sat, 09 Jan 2016 18:25:54 GMT
       Source-Age:
-      - '0'
+      - '159'
     body:
       encoding: UTF-8
       string: |
@@ -203,10 +203,10 @@ http_interactions:
         Say 'Blockchain' one more time!
         I will blockchain you into a bin in a minute
     http_version: 
-  recorded_at: Sat, 09 Jan 2016 17:17:32 GMT
+  recorded_at: Sat, 09 Jan 2016 18:20:54 GMT
 - request:
     method: get
-    uri: https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/things.csv?client_id=&client_secret=
+    uri: https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/things.csv?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
     body:
       encoding: US-ASCII
       string: ''
@@ -237,37 +237,37 @@ http_interactions:
       Cache-Control:
       - max-age=300
       X-Github-Request-Id:
-      - B91F1317:23FD:36507F1:569140AC
+      - B91F1322:23FD:383224D:56914EE8
       Content-Length:
       - '70'
       Accept-Ranges:
       - bytes
       Date:
-      - Sat, 09 Jan 2016 17:17:33 GMT
+      - Sat, 09 Jan 2016 18:20:54 GMT
       Via:
       - 1.1 varnish
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-lhr6322-LHR
+      - cache-lhr6332-LHR
       X-Cache:
-      - MISS
+      - HIT
       X-Cache-Hits:
-      - '0'
+      - '1'
       Vary:
       - Authorization,Accept-Encoding
       Access-Control-Allow-Origin:
       - "*"
       X-Fastly-Request-Id:
-      - d0fb9307e8fb704853d27c20d318528cc11be1e9
+      - f8fe5b93f82b836675f4c0737cc343c9c6fae355
       Expires:
-      - Sat, 09 Jan 2016 17:22:33 GMT
+      - Sat, 09 Jan 2016 18:25:54 GMT
       Source-Age:
-      - '0'
+      - '159'
     body:
       encoding: UTF-8
       string: "cats\ndogs\nrabbits\nmeerkats\nhorses\nvelociraptors\nminifigs\nGithub\nowls
         \n"
     http_version: 
-  recorded_at: Sat, 09 Jan 2016 17:17:33 GMT
+  recorded_at: Sat, 09 Jan 2016 18:20:54 GMT
 recorded_with: VCR 3.0.1
