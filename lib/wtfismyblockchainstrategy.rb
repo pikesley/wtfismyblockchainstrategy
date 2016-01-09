@@ -16,6 +16,7 @@ module Wtfismyblockchainstrategy
       conneg.set :accept_all_extensions, false
       conneg.set :fallback, :html
       conneg.ignore('/css/')
+      conneg.ignore('/js/')
       conneg.provide [
         :html,
         :json
@@ -27,6 +28,7 @@ module Wtfismyblockchainstrategy
         content_type negotiated_type
       end
     end
+
 
     get '/' do
       @content = '<h1>WTFISMYBLOCKCHAINSTRATEGY</h1>'
