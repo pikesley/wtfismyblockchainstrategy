@@ -1,3 +1,10 @@
 language: ruby
 rvm:
   - 2.3.0
+deploy:
+  provider: heroku
+  api_key:
+    secure: ihFhUY9lgmwRv89C9mI20exk8DZi7Gciwz4g8Nut/wrtUv0MDZG0Bml3aNTb1qA7/8zxYvyOPbPCWPHE4nMFS2jeh0z3/aYh8RTGtOdUra2KltajpoR3tOpEl80nYlbC+UGASXarPLFa9PIdltd/5lVsQG1vQXdsLp7nx1vU8YLeq1lwlTURLimCd/HW5OUnHhm7LhMS8fSzi3jT2N8icez6jWsN5e4fnF5Mr2xM9bEHvtnMzZCBNsWP8L6BSakTcZvTNmfbMJGHOXqv1cefF0hzUUOXuR06523/38aNRQHC6jGArAU3vJY1oxyhF/TMHq+eCY2f5wNGvB71odRSPF1rh1E/Jz8XZnwEhF51YeUS3/MO4Onb+Gdkl34umXaGwQt7L+zCRz/8AtGSThML80ZK6A3PNyuVovArHRIStq6+AbizHcVN9o1jd9ZhjyCTqI3bO7LMkF+stmrwzDJCONFhFtulWpWja9jzoZgvB8arjD9WUnTr2x6nxDCCuO8GFQdqzIcKgMJ1+bLZKYSRyqqP51fUG1vhWiXuWEWzfoBM1CTUyaoJdAECmEYDcWJ7l6floD/7oNnfW/hTFk5+Ph8LZxVMTRcNmxJm8GQlI24wKq5qUmxitLVc1cBZmQAqOZ8Qmrn88zC+18CxfEYbGCFUBI+miyisy5qbEA0rXdc=
+  app: wtfismyblockchainstrategy
+  on:
+    repo: pikesley/wtfismyblockchainstrategy
