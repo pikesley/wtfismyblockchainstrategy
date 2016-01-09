@@ -34,7 +34,6 @@ module Wtfismyblockchainstrategy
 
 
     get '/' do
-      @content = '<h1>WTFISMYBLOCKCHAINSTRATEGY</h1>'
       @title = 'WTFISMYBLOCKCHAINSTRATEGY'
       erb :index, layout: :default
     end

@@ -1,4 +1,3 @@
-@vcr
 Feature: Get JSON
 
   Background:
