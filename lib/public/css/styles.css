@@ -1,5 +1,4 @@
 html {
-  text-transform: uppercase;
 }
 
 #strategy {
@@ -8,4 +7,39 @@ html {
 
 #title, #strategy {
   margin-bottom: 50px;
+}
+
+#generate {
+  position: absolute;
+  right: 0;
+}
+
+#title, #strategy, #generate {
+  text-transform: uppercase;
+}
+
+/* Footer magic */
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 50px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  margin-top: 10px;
+
+  opacity: 1;
+  color: white;
+  height: 50px;
+  color: #333;
+  border-top: solid 1px #ccc;
+
+  padding: 15px;
+}
+
+.footer a {
+  color: #333;
 }
