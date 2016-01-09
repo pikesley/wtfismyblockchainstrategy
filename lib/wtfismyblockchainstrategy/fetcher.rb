@@ -33,7 +33,17 @@ module Wtfismyblockchainstrategy
 
     def self.fetch_CSV url
       csv = get url
-      CSV.parse csv
+      CSV.parse(csv).map { |c| c[0] }
+    end
+
+    def self.fetch_CSVs list
+      h = {}
+      list.each do |item|
+        url = "https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/#{item}.csv"
+        h[item] = fetch_CSV url
+      end
+
+      h
     end
   end
 end

@@ -2,6 +2,7 @@ require 'sinatra/base'
 require 'rack/conneg'
 require 'redis'
 require 'httparty'
+require 'tilt/erubis'
 
 require_relative 'wtfismyblockchainstrategy/fetcher'
 require_relative 'wtfismyblockchainstrategy/version'
@@ -24,8 +25,8 @@ module Wtfismyblockchainstrategy
     end
 
     get '/' do
-      @content = '<h1>Hello from Wtfismyblockchainstrategy</h1>'
-      @title = 'Wtfismyblockchainstrategy'
+      @content = '<h1>WTFISMYBLOCKCHAINSTRATEGY</h1>'
+      @title = 'WTFISMYBLOCKCHAINSTRATEGY'
       erb :index, layout: :default
     end
 
@@ -47,6 +48,13 @@ module Wtfismyblockchainstrategy
               'Owls'
             ]
           }.to_json
+
+          Fetcher.fetch_CSVs([
+            'disruptables',
+            'headings',
+            'responses',
+            'things'
+          ]).to_json
         end
       end
     end

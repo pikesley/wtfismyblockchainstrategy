@@ -8,6 +8,7 @@ gem 'rake'
 gem 'rack-conneg'
 gem 'redis'
 gem 'httparty'
+gem 'puma'
 
 group :test do
   gem 'cucumber'

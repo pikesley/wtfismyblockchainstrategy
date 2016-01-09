@@ -109,6 +109,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    puma (2.15.3)
     rack (1.6.4)
     rack-conneg (0.1.5)
       rack (>= 1.0)
@@ -189,6 +190,7 @@ DEPENDENCIES
   guard-cucumber
   httparty
   pry
+  puma
   rack-conneg
   rake
   redis

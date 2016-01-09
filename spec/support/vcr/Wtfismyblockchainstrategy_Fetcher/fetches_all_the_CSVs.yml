@@ -1,0 +1,207 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/disruptables.csv?client_id=&client_secret=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Dashboard v0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000
+      Etag:
+      - '"9c4d3ca40c9b76aee2242d0e7b9ac82dac03afa8"'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Cache-Control:
+      - max-age=300
+      X-Github-Request-Id:
+      - B91F1220:23F7:11FB033:56913DA0
+      Content-Length:
+      - '43'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sat, 09 Jan 2016 17:04:32 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-lcy1125-LCY
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Authorization,Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fastly-Request-Id:
+      - 410d7d114037e2c040016e1023a55104f7b0dbe4
+      Expires:
+      - Sat, 09 Jan 2016 17:09:32 GMT
+      Source-Age:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: |
+        the movie industry
+        the banking sector
+        Uber
+    http_version: 
+  recorded_at: Sat, 09 Jan 2016 17:04:32 GMT
+- request:
+    method: get
+    uri: https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/headings.csv?client_id=&client_secret=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Dashboard v0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000
+      Etag:
+      - '"a074ed51629e6f20adda9a4534761b44bdc617ab"'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Cache-Control:
+      - max-age=300
+      X-Github-Request-Id:
+      - B91F121C:23FA:29BB091:56913DA0
+      Content-Length:
+      - '159'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sat, 09 Jan 2016 17:04:32 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-lcy1121-LCY
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Authorization,Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fastly-Request-Id:
+      - 0321eb44d0b070aca5ae2866d73d2be7fdac1502
+      Expires:
+      - Sat, 09 Jan 2016 17:09:32 GMT
+      Source-Age:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: |
+        Check this shit out, my blockchain strategy is
+        Stop what you're doing and look at this, my blockchain strategy is
+        My blockchain strategy, have you grokked it?
+    http_version: 
+  recorded_at: Sat, 09 Jan 2016 17:04:32 GMT
+- request:
+    method: get
+    uri: https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/responses.csv?client_id=&client_secret=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Dashboard v0.0.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000
+      Etag:
+      - '"591fd680cc20f31c4ceab83545db77f5285c3f63"'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Cache-Control:
+      - max-age=300
+      X-Github-Request-Id:
+      - B91F1217:23F8:19EF143:56913DA0
+      Content-Length:
+      - '106'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sat, 09 Jan 2016 17:04:33 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-lcy1120-LCY
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Authorization,Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fastly-Request-Id:
+      - 0a7b3b420d7b1839309d03375939ddf5377a4184
+      Expires:
+      - Sat, 09 Jan 2016 17:09:33 GMT
+      Source-Age:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: |
+        Is that the best you can do?
+        Say 'Blockchain' one more time!
+        I will blockchain you into a bin in a minute
+    http_version: 
+  recorded_at: Sat, 09 Jan 2016 17:04:33 GMT
+recorded_with: VCR 3.0.1
