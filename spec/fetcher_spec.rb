@@ -10,7 +10,7 @@ module Wtfismyblockchainstrategy
           'horses',
           'velociraptors',
           'minifigs',
-          'owls '
+          'owls'
         ]
       )
     end
