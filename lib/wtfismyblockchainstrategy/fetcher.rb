@@ -45,5 +45,10 @@ module Wtfismyblockchainstrategy
 
       h
     end
+
+    def self.list_CSVs
+      url = 'https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data'
+      JSON.parse(get url).map { |f| f['name'].sub(/\.csv$/, '') }
+    end
   end
 end

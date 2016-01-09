@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/disruptables.csv?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
+    uri: https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
     body:
       encoding: US-ASCII
       string: ''
@@ -16,258 +16,57 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Content-Security-Policy:
-      - default-src 'none'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Frame-Options:
-      - deny
-      X-Content-Type-Options:
-      - nosniff
-      Strict-Transport-Security:
-      - max-age=31536000
-      Etag:
-      - '"9c4d3ca40c9b76aee2242d0e7b9ac82dac03afa8"'
-      Content-Type:
-      - text/plain; charset=utf-8
-      Cache-Control:
-      - max-age=300
-      X-Github-Request-Id:
-      - B91F131E:23F5:7741C7:56914EE7
-      Content-Length:
-      - '43'
-      Accept-Ranges:
-      - bytes
+      Server:
+      - GitHub.com
       Date:
-      - Sat, 09 Jan 2016 18:20:54 GMT
-      Via:
-      - 1.1 varnish
-      Connection:
-      - keep-alive
-      X-Served-By:
-      - cache-lhr6321-LHR
-      X-Cache:
-      - HIT
-      X-Cache-Hits:
-      - '1'
+      - Sat, 09 Jan 2016 20:20:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '7225'
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4995'
+      X-Ratelimit-Reset:
+      - '1452373757'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Last-Modified:
+      - Sat, 09 Jan 2016 17:53:49 GMT
+      Etag:
+      - '"ef92b61698357322f0b0ccd99cd33bcf"'
       Vary:
-      - Authorization,Accept-Encoding
+      - Accept
+      - Accept-Encoding
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
       Access-Control-Allow-Origin:
       - "*"
-      X-Fastly-Request-Id:
-      - 28e22d12dadfe708c509be98723fa66cece9c27b
-      Expires:
-      - Sat, 09 Jan 2016 18:25:54 GMT
-      Source-Age:
-      - '159'
-    body:
-      encoding: UTF-8
-      string: |
-        the movie industry
-        the banking sector
-        Uber
-    http_version: 
-  recorded_at: Sat, 09 Jan 2016 18:20:54 GMT
-- request:
-    method: get
-    uri: https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/headings.csv?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/vnd.github.v3+json
-      User-Agent:
-      - Dashboard v0.0.1
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
       Content-Security-Policy:
       - default-src 'none'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Frame-Options:
-      - deny
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
       X-Content-Type-Options:
       - nosniff
-      Strict-Transport-Security:
-      - max-age=31536000
-      Etag:
-      - '"2251cb86c6f2cde03dd27a6440302744c89e2e0d"'
-      Content-Type:
-      - text/plain; charset=utf-8
-      Cache-Control:
-      - max-age=300
-      X-Github-Request-Id:
-      - B91F1323:23FD:3832141:56914EE7
-      Content-Length:
-      - '165'
-      Accept-Ranges:
-      - bytes
-      Date:
-      - Sat, 09 Jan 2016 18:20:54 GMT
-      Via:
-      - 1.1 varnish
-      Connection:
-      - keep-alive
-      X-Served-By:
-      - cache-lhr6324-LHR
-      X-Cache:
-      - HIT
-      X-Cache-Hits:
-      - '1'
-      Vary:
-      - Authorization,Accept-Encoding
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Fastly-Request-Id:
-      - 2b9ef18ff9efdd280c0bbfdf530d297c49ffc433
-      Expires:
-      - Sat, 09 Jan 2016 18:25:54 GMT
-      Source-Age:
-      - '159'
-    body:
-      encoding: UTF-8
-      string: |
-        "Check this shit out, my blockchain strategy is"
-        "Stop what you're doing and look at this, my blockchain strategy is"
-        "My blockchain strategy, have you grokked it?"
-    http_version: 
-  recorded_at: Sat, 09 Jan 2016 18:20:54 GMT
-- request:
-    method: get
-    uri: https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/responses.csv?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/vnd.github.v3+json
-      User-Agent:
-      - Dashboard v0.0.1
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Security-Policy:
-      - default-src 'none'
-      X-Xss-Protection:
-      - 1; mode=block
       X-Frame-Options:
       - deny
-      X-Content-Type-Options:
-      - nosniff
-      Strict-Transport-Security:
-      - max-age=31536000
-      Etag:
-      - '"591fd680cc20f31c4ceab83545db77f5285c3f63"'
-      Content-Type:
-      - text/plain; charset=utf-8
-      Cache-Control:
-      - max-age=300
-      X-Github-Request-Id:
-      - B91F131B:23F6:B5E1C8:56914EE7
-      Content-Length:
-      - '106'
-      Accept-Ranges:
-      - bytes
-      Date:
-      - Sat, 09 Jan 2016 18:20:54 GMT
-      Via:
-      - 1.1 varnish
-      Connection:
-      - keep-alive
-      X-Served-By:
-      - cache-lhr6324-LHR
-      X-Cache:
-      - HIT
-      X-Cache-Hits:
-      - '1'
-      Vary:
-      - Authorization,Accept-Encoding
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Fastly-Request-Id:
-      - a4e25d6cdce59aee959106457a01daeb3b8ad9c5
-      Expires:
-      - Sat, 09 Jan 2016 18:25:54 GMT
-      Source-Age:
-      - '159'
-    body:
-      encoding: UTF-8
-      string: |
-        Is that the best you can do?
-        Say 'Blockchain' one more time!
-        I will blockchain you into a bin in a minute
-    http_version: 
-  recorded_at: Sat, 09 Jan 2016 18:20:54 GMT
-- request:
-    method: get
-    uri: https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/things.csv?client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/vnd.github.v3+json
-      User-Agent:
-      - Dashboard v0.0.1
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Security-Policy:
-      - default-src 'none'
       X-Xss-Protection:
       - 1; mode=block
-      X-Frame-Options:
-      - deny
-      X-Content-Type-Options:
-      - nosniff
-      Strict-Transport-Security:
-      - max-age=31536000
-      Etag:
-      - '"1f1b601611603c778fd2868d1a2d1c517dcb073d"'
-      Content-Type:
-      - text/plain; charset=utf-8
-      Cache-Control:
-      - max-age=300
-      X-Github-Request-Id:
-      - B91F1322:23FD:383224D:56914EE8
-      Content-Length:
-      - '70'
-      Accept-Ranges:
-      - bytes
-      Date:
-      - Sat, 09 Jan 2016 18:20:54 GMT
-      Via:
-      - 1.1 varnish
-      Connection:
-      - keep-alive
       X-Served-By:
-      - cache-lhr6332-LHR
-      X-Cache:
-      - HIT
-      X-Cache-Hits:
-      - '1'
-      Vary:
-      - Authorization,Accept-Encoding
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Fastly-Request-Id:
-      - f8fe5b93f82b836675f4c0737cc343c9c6fae355
-      Expires:
-      - Sat, 09 Jan 2016 18:25:54 GMT
-      Source-Age:
-      - '159'
+      - e183f7c661b1bbc2c987b3c4dc7b04e0
+      X-Github-Request-Id:
+      - 5102724B:B792:1C1A781:56916B87
     body:
       encoding: UTF-8
-      string: "cats\ndogs\nrabbits\nmeerkats\nhorses\nvelociraptors\nminifigs\nGithub\nowls
-        \n"
+      string: '[{"name":"disruptables.csv","path":"data/disruptables.csv","sha":"9c4d3ca40c9b76aee2242d0e7b9ac82dac03afa8","size":43,"url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/disruptables.csv?ref=master","html_url":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/disruptables.csv","git_url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/9c4d3ca40c9b76aee2242d0e7b9ac82dac03afa8","download_url":"https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/disruptables.csv","type":"file","_links":{"self":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/disruptables.csv?ref=master","git":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/9c4d3ca40c9b76aee2242d0e7b9ac82dac03afa8","html":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/disruptables.csv"}},{"name":"gather.csv","path":"data/gather.csv","sha":"0540f1b1c44295e77573511cc5bcc8495d7f0432","size":31,"url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/gather.csv?ref=master","html_url":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/gather.csv","git_url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/0540f1b1c44295e77573511cc5bcc8495d7f0432","download_url":"https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/gather.csv","type":"file","_links":{"self":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/gather.csv?ref=master","git":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/0540f1b1c44295e77573511cc5bcc8495d7f0432","html":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/gather.csv"}},{"name":"group.csv","path":"data/group.csv","sha":"ec33c58a327b236bfd1e94fcc79d622993827c60","size":28,"url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/group.csv?ref=master","html_url":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/group.csv","git_url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/ec33c58a327b236bfd1e94fcc79d622993827c60","download_url":"https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/group.csv","type":"file","_links":{"self":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/group.csv?ref=master","git":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/ec33c58a327b236bfd1e94fcc79d622993827c60","html":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/group.csv"}},{"name":"headings.csv","path":"data/headings.csv","sha":"2251cb86c6f2cde03dd27a6440302744c89e2e0d","size":165,"url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/headings.csv?ref=master","html_url":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/headings.csv","git_url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/2251cb86c6f2cde03dd27a6440302744c89e2e0d","download_url":"https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/headings.csv","type":"file","_links":{"self":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/headings.csv?ref=master","git":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/2251cb86c6f2cde03dd27a6440302744c89e2e0d","html":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/headings.csv"}},{"name":"responses.csv","path":"data/responses.csv","sha":"591fd680cc20f31c4ceab83545db77f5285c3f63","size":106,"url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/responses.csv?ref=master","html_url":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/responses.csv","git_url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/591fd680cc20f31c4ceab83545db77f5285c3f63","download_url":"https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/responses.csv","type":"file","_links":{"self":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/responses.csv?ref=master","git":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/591fd680cc20f31c4ceab83545db77f5285c3f63","html":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/responses.csv"}},{"name":"templates.csv","path":"data/templates.csv","sha":"cac3456b0be373dd64c513faf845de582abd0741","size":142,"url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/templates.csv?ref=master","html_url":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/templates.csv","git_url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/cac3456b0be373dd64c513faf845de582abd0741","download_url":"https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/templates.csv","type":"file","_links":{"self":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/templates.csv?ref=master","git":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/cac3456b0be373dd64c513faf845de582abd0741","html":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/templates.csv"}},{"name":"things.csv","path":"data/things.csv","sha":"1f1b601611603c778fd2868d1a2d1c517dcb073d","size":70,"url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/things.csv?ref=master","html_url":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/things.csv","git_url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/1f1b601611603c778fd2868d1a2d1c517dcb073d","download_url":"https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/things.csv","type":"file","_links":{"self":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/things.csv?ref=master","git":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/1f1b601611603c778fd2868d1a2d1c517dcb073d","html":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/things.csv"}},{"name":"verb.csv","path":"data/verb.csv","sha":"5c0d0ccd6960afefa08d49195c934a059afe4b03","size":32,"url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/verb.csv?ref=master","html_url":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/verb.csv","git_url":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/5c0d0ccd6960afefa08d49195c934a059afe4b03","download_url":"https://raw.githubusercontent.com/pikesley/wtfismyblockchainstrategy/master/data/verb.csv","type":"file","_links":{"self":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/contents/data/verb.csv?ref=master","git":"https://api.github.com/repos/pikesley/wtfismyblockchainstrategy/git/blobs/5c0d0ccd6960afefa08d49195c934a059afe4b03","html":"https://github.com/pikesley/wtfismyblockchainstrategy/blob/master/data/verb.csv"}}]'
     http_version: 
-  recorded_at: Sat, 09 Jan 2016 18:20:54 GMT
+  recorded_at: Sat, 09 Jan 2016 20:20:23 GMT
 recorded_with: VCR 3.0.1
