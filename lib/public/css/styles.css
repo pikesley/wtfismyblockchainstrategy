@@ -41,5 +41,6 @@ body {
 }
 
 .footer a {
-  color: #333;
+  color: #fa8100;
+  font-weight: bold;
 }
