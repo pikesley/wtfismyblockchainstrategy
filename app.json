@@ -2,17 +2,6 @@
   "name": "wtfismyblockchainstrategy",
   "scripts": {
   },
-  "env": {
-    "GITHUB_CLIENT_ID": {
-      "required": true
-    },
-    "GITHUB_CLIENT_SECRET": {
-      "required": true
-    },
-    "REDIS_URL": {
-      "required": true
-    }
-  },
   "addons": [
     "heroku-redis"
   ]
