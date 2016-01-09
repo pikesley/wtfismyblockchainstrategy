@@ -1,8 +1,22 @@
 <h1 id='title'></h1>
+<p id='strategy'></p>
+<a id='generate' href='/' title='Hit me again!'></a>
+
 <script>
 $.getJSON(document.URL + '/data', function(json) {
-  console.log(json)
-  var titles = json['headings']
-  $('#title').text(titles[Math.floor(Math.random() * titles.length)])
+  $('#title').text(getRandom(json['headings']))
+
+  $('#strategy').text(
+    'to put ' +
+    getRandom(json['things']) +
+    ' into a blockchain in order to disrupt ' +
+    getRandom(json['disruptables'])
+  )
+
+  $('#generate').text(getRandom(json['responses']))
 })
+
+function getRandom(array) {
+  return array[Math.floor(Math.random() * array.length)]
+}
 </script>
