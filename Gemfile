@@ -15,6 +15,8 @@ group :test do
   gem 'webmock'
   gem 'guard'
   gem 'guard-cucumber'
+  gem 'guard-rspec'
+  gem 'guard-jasmine'
   gem 'pry'
   gem 'rspec'
   gem 'coveralls'
