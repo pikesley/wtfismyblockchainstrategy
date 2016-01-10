@@ -29,3 +29,33 @@ describe('Placeholders', function() {
     })
   })
 })
+
+describe('Templates', function() {
+  describe('words', function() {
+    it('splits a string', function() {
+      expect(words('this is a @string')).toEqual(
+        [
+          'this',
+          'is',
+          'a',
+          '@string'
+        ]
+      )
+    })
+  })
+
+  describe('populateTemplate', function() {
+    var json = {
+      'things': [
+        'cats'
+      ],
+      'stuff': [
+        'buckets'
+      ]
+    }
+    var template = 'Put @things into @stuff'
+    it('fills a simple template', function() {
+      expect(populateTemplate(template, json)).toEqual('Put cats into buckets')
+    })
+  })
+})
