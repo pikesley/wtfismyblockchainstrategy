@@ -20,4 +20,5 @@ group :test do
   gem 'coveralls'
   gem 'cucumber-api-steps', require: false
   gem 'actionpack', '~> 4'
+  gem 'jasmine'
 end
