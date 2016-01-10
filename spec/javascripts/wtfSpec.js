@@ -69,3 +69,50 @@ describe('Templates', function() {
     })
   })
 })
+
+describe('Nested Templates', function() {
+  var json = {
+    'templates': [
+      'Throw @things at @stuff'
+    ],
+    'things': [
+      '@adjective bears'
+    ],
+    'stuff': [
+      'libertarians'
+    ],
+    'adjective': [
+      'angry'
+    ]
+  }
+  it('fills a template recursively', function() {
+    expect(template(json)).toEqual('Throw angry bears at libertarians')
+  })
+
+  describe('Deeply-nested Templates', function() {
+    var json = {
+      'templates': [
+        '@verb @things into @target'
+      ],
+      'verb': [
+        'pivot'
+      ],
+      'things': [
+        'disruptors'
+      ],
+      'target': [
+        'the Sun with @motivation'
+      ],
+      'motivation': [
+        '@adjective prejudice'
+      ],
+      'adjective': [
+        'extreme'
+      ]
+    }
+
+    it('fills a template recursively', function() {
+      expect(template(json)).toEqual('pivot disruptors into the Sun with extreme prejudice')
+    })
+  })
+})
