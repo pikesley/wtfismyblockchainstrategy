@@ -6,4 +6,12 @@
 
 # WTFISMYBLOCKCHAINSTRATEGY
 
-Data is [here](data/), please PR me some more ideas
+It picks a random template from [here](data/templates.yml), and then populates it (randomly) (and recursively) from the [other data](data)
+
+It serves up JSON, of course:
+
+    curl -X GET -H 'Accept: application/json' https://wtfismyblockchainstrategy.herokuapp.com/
+
+I could use some more data though, please send PRs
+
+I could easily make this into a _WTFismygenericthing_ generator
