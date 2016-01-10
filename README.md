@@ -14,4 +14,4 @@ It serves up JSON, of course:
 
 I could use some more data though, please send PRs
 
-I could easily make this into a _WTFismygenericthing_ generator
+I think I will probably make this into a _WTFismygenericthing_ generator
