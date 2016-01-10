@@ -44,15 +44,25 @@ describe('Templates', function() {
     })
   })
 
+  var json = {
+    'things': [
+      'cats'
+    ],
+    'stuff': [
+      'buckets'
+    ]
+  }
+
+  describe('replaceWord', function() {
+    it('replaces a placeholder', function() {
+      expect(replaceWord('@things', json)).toEqual('cats')
+    })
+    it('ignores a non-placeholder', function() {
+      expect(replaceWord('plain', json)).toEqual('plain')
+    })
+  })
+
   describe('populateTemplate', function() {
-    var json = {
-      'things': [
-        'cats'
-      ],
-      'stuff': [
-        'buckets'
-      ]
-    }
     var template = 'Put @things into @stuff'
     it('fills a simple template', function() {
       expect(populateTemplate(template, json)).toEqual('Put cats into buckets')
