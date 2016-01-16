@@ -4,6 +4,7 @@ ruby '2.3.0'
 
 gem 'sinatra'
 gem 'rack-conneg'
+gem 'rack-google-analytics'
 gem 'rake'
 gem 'puma'
 

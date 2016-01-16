@@ -8,4 +8,7 @@ module Wtfismygenericthing
       h
     end
   end
+
+  WTF = Helpers.grab_YAMLs 'data'
+  CONFIG = Helpers.grab_YAMLs 'config'
 end

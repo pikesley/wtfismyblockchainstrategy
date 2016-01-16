@@ -5,8 +5,10 @@ module Wtfismygenericthing
     set :public_folder, 'public'
     set :views, 'views'
 
-  # Fill this in if you have one
-  #  use Rack::GoogleAnalytics, :tracker => 'UA-00000000-0'
+    if CONFIG['ga_tag']
+      require 'rack-google-analytics'
+      use Rack::GoogleAnalytics, :tracker => CONFIG['ga_tag']
+    end
 
     use Rack::Conneg do |conneg|
       conneg.set :accept_all_extensions, false

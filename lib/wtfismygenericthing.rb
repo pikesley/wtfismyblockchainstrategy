@@ -3,8 +3,8 @@ require 'tilt/erubis'
 require 'yaml'
 require 'json'
 
-require_relative 'wtfismygenericthing/racks'
 require_relative 'wtfismygenericthing/helpers'
+require_relative 'wtfismygenericthing/racks'
 
 module Wtfismygenericthing
   class App < Sinatra::Base
@@ -12,12 +12,15 @@ module Wtfismygenericthing
       include Wtfismygenericthing::Helpers
     end
 
-    WTF = Helpers.grab_YAMLs 'data'
-
     get '/' do
       respond_to do |wants|
         wants.html do
-          @title = 'Wtfismygenericthing'
+          @title = CONFIG['title']
+          @githubcornerurl = CONFIG['github_corner']['url']
+          @githubcornercolour = CONFIG['github_corner']['colour']
+          @footerurl = CONFIG['homepage']['url']
+          @footername = CONFIG['homepage']['name']
+          @bootswatch = CONFIG['bootswatch']
           erb :index, layout: :default
         end
 
