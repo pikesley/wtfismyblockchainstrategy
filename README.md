@@ -12,12 +12,10 @@ Mostly an excuse for me to learn JavaScript TBH. See it in action [here](http://
 
 You should probably fork it first, then
 
-```
-git clone http://github.com/you/wtfismygenericthing
-cd wtfismygenericthing
-bundle
-bundle exec rake
-```
+    git clone http://github.com/you/wtfismygenericthing
+    cd wtfismygenericthing
+    bundle
+    bundle exec rake
 
 You'll want a bit of customisation or it'll be a bit shit
 
@@ -29,10 +27,8 @@ There are some sample data files in [data](data/). The key ones are:
 
 A list of titles, one of which will be randomly chosen. Probably something along the lines of
 
-```yaml
-headings:
-  - Stop what you're doing and look at this, my blockchain strategy is
-```
+    headings:
+      - Stop what you're doing and look at this, my blockchain strategy is
 
 Note: EVERYTHING gets upcased when it's rendered, it's just easier that way
 
@@ -40,10 +36,8 @@ Note: EVERYTHING gets upcased when it's rendered, it's just easier that way
 
 A list of skeletons for the robots to randomly select and then populate, with hilarious effect. Maybe
 
-```yaml
-templates:
-  - to use @animals and @people to mine bitcoins
-```
+    templates:
+      - to use @animals and @people to mine bitcoins
 
 or similar
 
@@ -53,10 +47,8 @@ Note: those _@placeholder_ words are important, more later
 
 One of these will be randomly picked as the text for the 'Give me another' link.
 
-```yaml
-responses:
-  - this is shit, try again
-```
+    responses:
+      - this is shit, try again
 
 you know the sort of thing
 
@@ -64,15 +56,13 @@ you know the sort of thing
 
 The rest of the data files will be used to populate the templates. I've used the convention of one-file-per-list, but the code does not care TBH - you can mash them all into the same YAML file as long as they're namespaced like this
 
-```yaml
-animals:
-  - dogs
-  - cats
+    animals:
+      - dogs
+      - cats
 
-people:
-  - Edsger Dijkstra
-  - Beyoncé
-```
+    people:
+      - Edsger Dijkstra
+      - Beyoncé
 
 #### Repeated placeholders
 
@@ -82,14 +72,12 @@ You can have something like `@things and also @things` in a template, which will
 
 It's perfectly cromulent to put _@placeholders_ in these files, so you can have:
 
-```yaml
-things:
-  - @adjective bananas
+    things:
+      - @adjective bananas
 
-adjective:
-  - furry
-  - straight
-```
+    adjective:
+      - furry
+      - straight
 
 or whatever. In theory, this works to arbitrary depth ([the tests](https://github.com/pikesley/wtfismygenericthing/blob/00c571eaf9904a70720f663144993300f4b86887/spec/javascripts/wtfismygenericthing_spec.js#L86-L110) go 2 levels down, at least) but it will presumably explode in your face if you attempt to take the piss. Speaking of which:
 
@@ -105,27 +93,25 @@ I can think of at least these things that will make it not work:
 
 There's also a `config/config.yml`:
 
-```yaml
-title: Wtfismygenericthing
+    title: Wtfismygenericthing
 
-#ga_tag: UA-1974-1
+    #ga_tag: UA-1974-1
 
-github_corner:
-  url: http://github.com/pikesley/wtfismygenericthing
-  colour: '#fa8100'
+    github_corner:
+      url: http://github.com/pikesley/wtfismygenericthing
+      colour: '#fa8100'
 
-homepage:
-  name: sam
-  url: http://sam.pikesley.org
+    homepage:
+      name: sam
+      url: http://sam.pikesley.org
 
-bootswatch: flatly
-```
+    bootswatch: flatly
 
 * `title` is for the `<title>` tag
 * `ga_tag` is for a Google Analytics tag, if you have one
 * `github_corner` takes a URL and a hex colour for the _Fork me on Github_ thing
 * `homepage` is for _your_ homepage and name, to go in the footer
-* `bootswatch` is an entirely optional identifier for a Bootstrap theme from [Bootswatch](https://bootswatch.com/) 
+* `bootswatch` is an entirely optional identifier for a Bootstrap theme from [Bootswatch](https://bootswatch.com/)
 
 ## Running it
 
