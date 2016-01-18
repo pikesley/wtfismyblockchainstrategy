@@ -32,4 +32,29 @@ describe('Resusable lists', function() {
       }
     })
   })
+
+  describe('populate a template with a repeated placeholder', function() {
+    var json = {
+      'templates': [
+        '@these and @these'
+      ],
+      'these': [
+        'this',
+        'that'
+      ]
+    }
+
+    it('reuses the list', function() {
+      templated = template(json)
+      switch(templated.substring(0, 4)) {
+        case 'this':
+          expect(templated).toEqual('this and that')
+          break
+
+        case 'that':
+          expect(templated).toEqual('that and this')
+          break
+      }
+    })
+  })
 })

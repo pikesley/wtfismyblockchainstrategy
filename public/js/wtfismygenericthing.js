@@ -1,6 +1,5 @@
 function extract(list) {
   var index = Math.floor(Math.random() * list.length)
-  index = 1
   a = {}
   a['victim'] = list[index]
   list.splice(index, 1)
@@ -67,18 +66,20 @@ function chunks(string) {
   return separate(string)
 }
 
-function substitute(chunk, json) {
-  if(isPlaceholder(chunk)) {
-    return getRandom(json[stripFirst(chunk)])
-  } else {
-    return chunk
-  }
-}
-
 function populateTemplate(template, json) {
   var populated = []
   $.each(chunks(template), function(index, chunk) {
-    populated.push(substitute(chunk, json))
+
+    subs = ''
+    if(isPlaceholder(chunk)) {
+      extracted = extract(json[stripFirst(chunk)])
+      subs = extracted['victim']
+      json[chunk] = extracted['remainder']
+    } else {
+      subs = chunk
+    }
+    populated.push(subs)
+
   })
   complete = populated.join('')
 
