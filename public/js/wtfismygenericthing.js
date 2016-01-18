@@ -1,3 +1,14 @@
+function isLetter(char) {
+  return('abcdefghijklmnopqrstuvwxyz@'.indexOf(char.toLowerCase()) > -1)
+}
+
+function isWord(string) {
+  if(string == '') {
+    return false
+  }
+  return(string.split('').every(isLetter))
+}
+
 function getRandom(array) {
   return array[Math.floor(Math.random() * array.length)]
 }
