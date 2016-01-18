@@ -13,6 +13,8 @@ module Wtfismygenericthing
     end
 
     get '/' do
+      headers 'Vary' => 'Accept'
+
       respond_to do |wants|
         wants.html do
           @title = CONFIG['title']

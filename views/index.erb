@@ -1,13 +1,13 @@
 <div id='content'>
   <h1 id='title'></h1>
-  <p id='strategy'></p>
+  <p id='thing'></p>
   <a id='generate' href='/'></a>
 </div>
 
 <script>
 $.getJSON(document.URL, function(json) {
   $('#title').text(getRandom(json['headings']))
-  $('#strategy').text(template(json))
+  $('#thing').text(template(json))
   $('#generate').text(getRandom(json['responses']))
 })
 </script>
