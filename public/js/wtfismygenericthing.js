@@ -1,3 +1,14 @@
+function extract(list) {
+  var index = Math.floor(Math.random() * list.length)
+  index = 1
+  a = {}
+  a['victim'] = list[index]
+  list.splice(index, 1)
+  a['remainder'] = list
+
+  return(a)
+}
+
 function isLetter(char) {
   return('abcdefghijklmnopqrstuvwxyz@'.indexOf(char.toLowerCase()) > -1)
 }
