@@ -31,9 +31,9 @@ describe('Placeholders', function() {
 })
 
 describe('Templates', function() {
-  describe('words', function() {
+  describe('chunks', function() {
     it('splits a string', function() {
-      expect(words('this is a @string')).toEqual(
+      expect(chunks('this is a @string')).toEqual(
         [
           'this',
           ' ',
@@ -56,12 +56,12 @@ describe('Templates', function() {
     ]
   }
 
-  describe('replaceWord', function() {
+  describe('replace', function() {
     it('replaces a placeholder', function() {
-      expect(replaceWord('@things', json)).toEqual('cats')
+      expect(substitute('@things', json)).toEqual('cats')
     })
     it('ignores a non-placeholder', function() {
-      expect(replaceWord('plain', json)).toEqual('plain')
+      expect(substitute('plain', json)).toEqual('plain')
     })
   })
 

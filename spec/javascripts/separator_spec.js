@@ -1,4 +1,4 @@
-describe('Splitter', function() {
+describe('Separator', function() {
   describe('know what a word is', function() {
     it('knows letters', function() {
       expect(isLetter('a')).toEqual(true)
@@ -26,28 +26,28 @@ describe('Splitter', function() {
     })
   })
 
-  describe('splits', function() {
-    describe('simple splits', function() {
-      it('splits "a"', function() {
-        expect(split('a')).toEqual(['a'])
+  describe('separates', function() {
+    describe('simple separations', function() {
+      it('separates "a"', function() {
+        expect(separate('a')).toEqual(['a'])
       })
 
-      it('splits "a "', function() {
-        expect(split('a ')).toEqual(['a', ' '])
+      it('separates "a "', function() {
+        expect(separate('a ')).toEqual(['a', ' '])
       })
 
-      it('splits "aa bb"', function() {
-        expect(split('aa bb')).toEqual(['aa', ' ', 'bb'])
+      it('separates "aa bb"', function() {
+        expect(separate('aa bb')).toEqual(['aa', ' ', 'bb'])
       })
     })
 
-    describe('splits with punctuation', function() {
-      it('splits "aa? bb"', function() {
-        expect(split('aa? bb')).toEqual(['aa', '? ', 'bb'])
+    describe('separations with punctuation', function() {
+      it('separates "aa? bb"', function() {
+        expect(separate('aa? bb')).toEqual(['aa', '? ', 'bb'])
       })
 
-      it('splits "Hello, this is a @thing!"', function() {
-        expect(split("Hello, this is a @thing!")).toEqual(
+      it('separates "Hello, this is a @thing!"', function() {
+        expect(separate("Hello, this is a @thing!")).toEqual(
           [
             'Hello',
             ', ',
@@ -63,8 +63,8 @@ describe('Splitter', function() {
         )
       })
 
-      it('splits with embedded quotes', function() {
-        expect(split("This has 'embedded quotes'")).toEqual(
+      it('separates with embedded quotes', function() {
+        expect(separate("This has 'embedded quotes'")).toEqual(
           [
             'This',
             ' ',
@@ -77,7 +77,7 @@ describe('Splitter', function() {
           ]
         )
 
-        expect(split('How about some "double-quotes"')).toEqual(
+        expect(separate('How about some "double-quotes"')).toEqual(
           [
             'How',
             ' ',
@@ -94,7 +94,7 @@ describe('Splitter', function() {
       })
 
       it('deals with random punctuation', function() {
-        expect(split("this( h%s d+= ' } fff£33d")).toEqual(
+        expect(separate("this( h%s d+= ' } fff£33d")).toEqual(
           [
             'this',
             '( ',
