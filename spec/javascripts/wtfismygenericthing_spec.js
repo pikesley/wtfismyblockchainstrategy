@@ -56,15 +56,6 @@ describe('Templates', function() {
     ]
   }
 
-  describe('replace', function() {
-    it('replaces a placeholder', function() {
-      expect(substitute('@things', json)).toEqual('cats')
-    })
-    it('ignores a non-placeholder', function() {
-      expect(substitute('plain', json)).toEqual('plain')
-    })
-  })
-
   describe('populateTemplate', function() {
     var template = 'Put @things into @stuff'
     it('fills a simple template', function() {
