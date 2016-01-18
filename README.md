@@ -10,6 +10,15 @@ Mostly an excuse for me to learn JavaScript TBH. See it in action [here](http://
 
 ## How to use it
 
+You should probably fork it first, then
+
+```
+git clone http://github.com/you/wtfismygenericthing
+cd wtfismygenericthing
+bundle
+bundle exec rake
+```
+
 You'll want a bit of customisation or it'll be a bit shit
 
 ### Data
@@ -91,21 +100,43 @@ I can think of at least these things that will make it not work:
 * Nesting templates to stupid depths, as mentioned above
 * Using a particular _@placeholder_ **more times than there are items in that list** - items are removed from the lists as they're subbed into the template. On that note:
 * Using a _@placeholder_ **for which you have no items at all** - it blew up for me because of a stupid typo
-* Circular templating - if you do this kind of thing
-
-```yaml
-templates:
-  - all the @things
-
-things:
-  - some @stuff
-
-stuff:
-  - with @things
-```
-
-then you clearly cannot be helped
 
 ## Config
 
-There's also
+There's also a `config/config.yml`:
+
+```yaml
+title: Wtfismygenericthing
+
+#ga_tag: UA-1974-1
+
+github_corner:
+  url: http://github.com/pikesley/wtfismygenericthing
+  colour: '#fa8100'
+
+homepage:
+  name: sam
+  url: http://sam.pikesley.org
+
+bootswatch: flatly
+```
+
+* `title` is for the `<title>` tag
+* `ga_tag` is for a Google Analytics tag, if you have one
+* `github_corner` takes a URL and a hex colour for the _Fork me on Github_ thing
+* `homepage` is for _your_ homepage and name, to go in the footer
+* `bootswatch` is an entirely optional identifier for a Bootstrap theme from [Bootswatch](https://bootswatch.com/) 
+
+## Running it
+
+You should be able to run it with
+
+```
+bundle exec rackup
+```
+
+and then point your browser at [http://localhost:9292/](http://localhost:9292/). And it should deploy straight onto Heroku no bother
+
+## Notes
+
+As ever, I regret nothing
