@@ -9,6 +9,33 @@ function isWord(string) {
   return(string.split('').every(isLetter))
 }
 
+function split(string) {
+  return compress(string.split(/([^@A-Za-z])/))
+}
+
+function compress(list) {
+  var a = []
+  var buffer = ''
+
+  $.each(list, function(index, word) {
+    if(isWord(word)) {
+      if(buffer != '') {
+        a.push(buffer)
+        buffer = ''
+      }
+      a.push(word)
+    } else {
+      buffer += word
+    }
+  })
+
+  if(buffer != '') {
+    a.push(buffer)
+  }
+
+  return(a)
+}
+
 function getRandom(array) {
   return array[Math.floor(Math.random() * array.length)]
 }
