@@ -56,5 +56,33 @@ describe('Resusable lists', function() {
           break
       }
     })
+
+    describe('with a recursive template', function() {
+      var json = {
+        'templates': [
+          '@things and @stuff'
+        ],
+        'things': [
+          'Lions',
+          'Tigers',
+          'Bears'
+        ],
+        'stuff': [
+          '@things and @things'
+        ]
+      }
+
+      it('reuses the list when things get recursive', function() {
+        templated = template(json)
+        words = templated.split(' ').sort()
+        expect(words).toEqual([
+          'Bears',
+          'Lions',
+          'Tigers',
+          'and',
+          'and'
+        ])
+      })
+    })
   })
 })
