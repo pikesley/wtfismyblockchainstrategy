@@ -53,7 +53,7 @@ function containsPlaceholders(string) {
 }
 
 function words(string) {
-  return string.split(' ')
+  return split(string)
 }
 
 function replaceWord(word, json) {
@@ -69,7 +69,7 @@ function populateTemplate(template, json) {
   $.each(words(template), function(index, word) {
     populated.push(replaceWord(word, json))
   })
-  complete = populated.join(' ')
+  complete = populated.join('')
 
   if(containsPlaceholders(complete)) {
     return populateTemplate(complete, json)

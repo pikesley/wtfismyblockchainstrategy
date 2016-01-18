@@ -36,8 +36,11 @@ describe('Templates', function() {
       expect(words('this is a @string')).toEqual(
         [
           'this',
+          ' ',
           'is',
+          ' ',
           'a',
+          ' ',
           '@string'
         ]
       )
@@ -73,7 +76,7 @@ describe('Templates', function() {
 describe('Nested Templates', function() {
   var json = {
     'templates': [
-      'Throw @things at @stuff'
+      'Throw @things, at @stuff'
     ],
     'things': [
       '@adjective bears'
@@ -86,7 +89,7 @@ describe('Nested Templates', function() {
     ]
   }
   it('fills a template recursively', function() {
-    expect(template(json)).toEqual('Throw angry bears at libertarians')
+    expect(template(json)).toEqual('Throw angry bears, at libertarians')
   })
 
   describe('Deeply-nested Templates', function() {
@@ -101,7 +104,7 @@ describe('Nested Templates', function() {
         'disruptors'
       ],
       'target': [
-        'the Sun with @motivation'
+        'the Sun, with @motivation'
       ],
       'motivation': [
         '@adjective prejudice'
@@ -112,7 +115,7 @@ describe('Nested Templates', function() {
     }
 
     it('fills a template recursively', function() {
-      expect(template(json)).toEqual('pivot disruptors into the Sun with extreme prejudice')
+      expect(template(json)).toEqual('pivot disruptors into the Sun, with extreme prejudice')
     })
   })
 })
