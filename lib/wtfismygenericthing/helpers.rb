@@ -10,5 +10,5 @@ module Wtfismygenericthing
   end
 
   WTF = Helpers.grab_YAMLs 'data'
-  CONFIG = Helpers.grab_YAMLs 'config'
+  CONFIG = YAML.load_file 'config/config.yml'
 end
