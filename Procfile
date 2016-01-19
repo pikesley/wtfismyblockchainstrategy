@@ -1,1 +1,1 @@
-web: bundle exec ruby lib/wtfismygenericthing.rb
+web: bundle exec rackup -p $PORT
