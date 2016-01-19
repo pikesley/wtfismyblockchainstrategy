@@ -6,7 +6,7 @@
 
 # WTF IS MY GENERIC THING?
 
-Mostly an excuse for me to learn JavaScript TBH. See it in action [here](http://wtfismybbctbqtopic.herokuapp.com/)
+Mostly an excuse for me to learn JavaScript TBH. See it in action [here](https://wtfismyblockchainstrategy.herokuapp.com/)
 
 ## How to use it
 
