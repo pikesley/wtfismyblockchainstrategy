@@ -1,2 +1,3 @@
-require File.join(File.dirname(__FILE__), 'lib/wtfismyblockchainstrategy.rb')
-run Wtfismyblockchainstrategy::App
+require File.join(File.dirname(__FILE__), 'lib/wtfismygenericthing.rb')
+
+run Wtfismygenericthing::App

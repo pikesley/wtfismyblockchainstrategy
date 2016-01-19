@@ -1,8 +1,0 @@
-{
-  "name": "wtfismyblockchainstrategy",
-  "scripts": {
-  },
-  "addons": [
-    "heroku-redis"
-  ]
-}

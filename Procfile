@@ -1,1 +1,1 @@
-web: bundle exec ruby lib/wtfismyblockchainstrategy.rb
+web: bundle exec ruby lib/wtfismygenericthing.rb

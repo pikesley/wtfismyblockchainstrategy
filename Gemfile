@@ -3,24 +3,22 @@ source 'https://rubygems.org'
 ruby '2.3.0'
 
 gem 'sinatra'
-gem 'rake'
 gem 'rack-conneg'
 gem 'rack-google-analytics'
+gem 'rake'
 gem 'puma'
-gem 'erubis'
 
 group :test do
   gem 'cucumber'
-  gem 'capybara'
-  gem 'webmock'
+  gem 'rspec'
   gem 'guard'
-  gem 'guard-cucumber'
   gem 'guard-rspec'
   gem 'guard-jasmine'
-  gem 'pry'
-  gem 'rspec'
+  gem 'guard-cucumber'
+  gem 'capybara'
   gem 'coveralls'
-  gem 'cucumber-api-steps', require: false
-  gem 'actionpack', '~> 4'
   gem 'jasmine'
+  gem 'pry'
+  gem 'actionpack'
+  gem 'cucumber-api-steps', require: false
 end

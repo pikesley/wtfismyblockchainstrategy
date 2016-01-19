@@ -1,9 +1,8 @@
-require 'coveralls'
-Coveralls.wear_merged!
-
 ENV['RACK_ENV'] = 'test'
+require 'coveralls'
+Coveralls.wear!
 
-require File.join(File.dirname(__FILE__), '..', '..', 'lib/wtfismyblockchainstrategy.rb')
+require File.join(File.dirname(__FILE__), '..', '..', 'lib/wtfismygenericthing.rb')
 
 require 'capybara'
 require 'capybara/cucumber'
@@ -11,18 +10,18 @@ require 'rspec'
 require 'cucumber/api_steps'
 require 'active_support/core_ext/object/blank'
 
-Capybara.app = Wtfismyblockchainstrategy
+Capybara.app = Wtfismygenericthing
 
-class WtfismyblockchainstrategyWorld
+class WtfismygenericthingWorld
   include Capybara::DSL
   include RSpec::Expectations
   include RSpec::Matchers
 
   def app
-    Wtfismyblockchainstrategy::App
+    Wtfismygenericthing::App
   end
 end
 
 World do
-  WtfismyblockchainstrategyWorld.new
+  WtfismygenericthingWorld.new
 end

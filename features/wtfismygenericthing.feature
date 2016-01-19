@@ -1,4 +1,4 @@
-Feature: Make sure Wtfismyblockchainstrategy is plumbed in correctly
+Feature: Make sure Wtfismygenericthing is plumbed in correctly
 
   Scenario: Get root
     When I send a GET request to "/"
