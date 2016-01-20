@@ -6,8 +6,6 @@
 
 <script>
 $.getJSON(document.URL, function(json) {
-  $('#title').text(getRandom(json['headings']))
-  $('#thing').text(template(json))
-  $('#generate').text(getRandom(json['responses']))
+  populate(json)
 })
 </script>

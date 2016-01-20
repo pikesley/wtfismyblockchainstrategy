@@ -3,6 +3,8 @@ src_files:
 stylesheets:
   - stylesheets/**/*.css
 helpers:
+  - helpers/jquery.min.js
+  - helpers/jasmine-jquery.js
   - helpers/**/*.js
 spec_files:
   - '**/*[sS]pec.js'
