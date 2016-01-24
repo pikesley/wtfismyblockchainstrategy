@@ -1,4 +1,5 @@
 language: ruby
+<<<<<<< HEAD
 cache: bundler
 rvm:
 - 2.3.0
@@ -9,3 +10,7 @@ deploy:
   app: wtfismyblockchainstrategy
   on:
     repo: pikesley/wtfismyblockchainstrategy
+=======
+rvm:
+  - 2.3.0
+>>>>>>> parent/master
