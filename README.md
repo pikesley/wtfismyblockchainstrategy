@@ -6,7 +6,7 @@
 
 # WTF IS MY GENERIC THING?
 
-Mostly an excuse for me to learn JavaScript TBH. See it in action:
+Mostly an excuse for me to learn JavaScript (and now [pjax](http://www.littlestreamsoftware.com/labs/learning-pjax/)) TBH. See it in action:
 
 * [WTF is my Blockchain Strategy](https://wtfismyblockchainstrategy.herokuapp.com/)
 * [WTF is my Open Data Strategy](https://wtfismyopendatastrategy.herokuapp.com/)

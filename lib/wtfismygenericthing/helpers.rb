@@ -1,5 +1,9 @@
 module Wtfismygenericthing
   module Helpers
+    def is_pjax?
+      env['HTTP_X_PJAX']
+    end
+
     def self.grab_YAMLs directory
       h = {}
       Dir.entries(directory).select { |i| i[-4..-1] == '.yml' }.each do |item|
