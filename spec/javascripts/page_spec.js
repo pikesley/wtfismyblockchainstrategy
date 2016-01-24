@@ -11,7 +11,7 @@ describe('Generated page', function() {
     }
     populate(data)
     expect($('#title').text()).toEqual('My Generic Thing shall be')
-    expect($('#thing').text()).toEqual('to put angry cats into buckets')
+    expect($('#strategy').text()).toEqual('to put angry cats into buckets')
     expect($('#generate').text()).toEqual('Nope, try again')
   })
 })
