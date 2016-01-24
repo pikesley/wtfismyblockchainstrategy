@@ -93,3 +93,9 @@ function populateTemplate(template, json) {
 function template(json) {
   return populateTemplate(getRandom(json['templates']), json)
 }
+
+function populate(json) {
+  $('#title').text(getRandom(json['headings']))
+  $('#strategy').text(template(json))
+  $('#generate').text(getRandom(json['responses']))
+}

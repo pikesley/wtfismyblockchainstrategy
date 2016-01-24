@@ -23,7 +23,8 @@ module Wtfismygenericthing
           @footerurl = CONFIG['homepage']['url']
           @footername = CONFIG['homepage']['name']
           @bootswatch = CONFIG['bootswatch']
-          erb :index, layout: :default
+
+          erb :index, layout: is_pjax? ? nil : :default
         end
 
         wants.json do
